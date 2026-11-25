@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Xuan (Allen) Zhao</title>
+  <meta name="description" content="Xuan (Allen) Zhao. AI for oncology.">
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #ffffff; --text: #000000; --muted: #444444; --link: #1a6b3c; --thumb: #ffffff; --line: #e6e6e6;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 300 1.05rem/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    }
+    .container { max-width: 860px; margin: 0 auto; padding: 3.5rem 2rem 4rem; }
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    b { font-weight: 600; }
+
+    h1 { margin: 0 0 1rem; font-size: 2rem; font-weight: 400; }
+    .bio p { margin: 0 0 1rem; max-width: 40rem; }
+    .links { display: flex; flex-wrap: wrap; gap: .25rem 1.25rem; }
+
+    h2 { margin: 3rem 0 1.5rem; font-size: 1.375rem; font-weight: 400; }
+
+    .pub { display: flex; gap: 1.5rem; align-items: flex-start; margin-bottom: 2.25rem; }
+    .pub-thumb { flex: 0 0 200px; }
+    .pub-thumb img {
+      display: block; width: 100%; height: auto;
+      background: var(--thumb); border: 1px solid var(--line); border-radius: 8px;
+    }
+    .pub-details { flex: 1; min-width: 0; }
+    .pub-title { font-weight: 600; }
+    .pub-authors, .pub-venue, .pub-links { margin-top: .2rem; }
+    .pub-venue { font-style: italic; }
+    .pub-desc { margin: .5rem 0 0; color: var(--muted); }
+
+    @media (max-width: 600px) {
+      .container { padding: 2.5rem 1rem 3rem; }
+      .pub { flex-direction: column; gap: .75rem; }
+      .pub-thumb { flex: none; width: 100%; max-width: 320px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <header class="bio">
+      <h1>Xuan (Allen) Zhao</h1>
+      <p>
+        I work on AI for oncology, primarily with deep learning models and
+        multi-agent systems. Before my Master's, I worked in industry on system
+        design and scalable cloud infrastructure for RNA-seq pipelines.
+      </p>
+      <nav class="links">
+        <a href="mailto:allenxzhao@outlook.com">Email</a>
+        <a href="https://scholar.google.com/citations?user=OPij4cUAAAAJ&amp;hl=en">Google Scholar</a>
+        <a href="https://github.com/allenxzhao">GitHub</a>
+        <a href="https://www.linkedin.com/in/xuan-allen-zhao/">LinkedIn</a>
+      </nav>
+    </header>
+
+    <section>
+      <h2>Research</h2>
+
+      <article class="pub">
+        <div class="pub-thumb"><img src="images/agentgui.png" width="720" height="291" alt="AgentGUI landing page"></div>
+        <div class="pub-details">
+          <a class="pub-title" href="https://agent-gui-project.github.io/">AgentGUI: An Interface for Observing and Steering Long-Running AI Agents</a>
+          <div class="pub-authors"><b>X. Zhao</b>, J. Sohn, Q. Zheng, M. Moor</div>
+          <div class="pub-venue">EMNLP 2026 (System Demonstrations)</div>
+          <div class="pub-links">
+            <a href="https://arxiv.org/abs/2607.26300">Paper</a> /
+            <a href="https://github.com/eth-medical-ai-lab/agent-gui">Code</a> /
+            <a href="https://agent-gui-project.github.io/">Project</a>
+          </div>
+          <p class="pub-desc">A user-friendly, locally hosted GUI for observing and steering AI agents amid multiple concurrent, long-running sessions.</p>
+        </div>
+      </article>
+
+      <article class="pub">
+        <div class="pub-thumb"><img src="images/pfs.png" width="720" height="621" alt="mLoT and PFS construction workflow"></div>
+        <div class="pub-details">
+          <a class="pub-title" href="https://doi.org/10.64898/2026.02.24.26346242">Reconstructing Real-World Metastatic Lines of Therapy Enables Progression Risk Stratification in Breast Cancer</a>
+          <div class="pub-authors"><b>X. Zhao</b>, T. Niederhauser, Z. Balázs, A. Wicki, B. Fan, M. Krauthammer</div>
+          <div class="pub-venue">npj Precision Oncology (accepted)</div>
+          <div class="pub-links">
+            <a href="https://doi.org/10.64898/2026.02.24.26346242">Preprint</a>
+          </div>
+          <p class="pub-desc">An evidence enrichment pipeline that reconstructs mLoTs and PFS from longitudinal EHR, and a model for progression risk prognostication.</p>
+        </div>
+      </article>
+
+      <article class="pub">
+        <div class="pub-thumb"><img src="images/orion.png" width="720" height="228" alt="Orion study overview and model architecture"></div>
+        <div class="pub-details">
+          <a class="pub-title" href="https://doi.org/10.1038/s41467-024-53851-9">Deep Generative AI Models Analyzing Circulating Orphan Non-Coding RNAs Enable Detection of Early-Stage Lung Cancer</a>
+          <div class="pub-authors">M. Karimzadeh, A. Momen-Roknabadi, T.B. Cavazos, …, <b>X. Zhao</b>, …, H. Goodarzi</div>
+          <div class="pub-venue">Nature Communications 15, 10090 (2024)</div>
+          <div class="pub-links">
+            <a href="https://doi.org/10.1038/s41467-024-53851-9">Paper</a>
+          </div>
+          <p class="pub-desc">Early-stage NSCLC detection using circulating orphan non-coding RNAs (oncRNAs).</p>
+        </div>
+      </article>
+    </section>
+
+  </div>
+</body>
+</html>
